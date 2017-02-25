@@ -1,13 +1,13 @@
 console.log('begin building c')
 
 try {
-  exports.root = require('./ro' + 'ot');
+  module.exports.root = require('./ro' + 'ot')
 } catch(_) {} finally {
-  if (!exports.root) exports.root = { exceptional: true }
+  if (!module.exports.root) module.exports.root = { exceptional: true }
 }
-console.log('exports.root is ', exports.root )
-exports.get_root = function () {
-    return exports.root;
+console.log('exports.root is ', module.exports.root )
+module.exports.get_root = function () {
+    return module.exports.root;
 };
 
-console.log('finished building c', exports)
+console.log('finished building c', module.exports)

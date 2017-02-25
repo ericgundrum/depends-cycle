@@ -1,8 +1,8 @@
 console.log('begin building root')
 
-exports.b = require('./b_redirect');
-exports.get_b = function () {
-    return exports.b;
-};
+module.exports.b = require('./b_redirect')
+module.exports.get_b = function () {
+    return module.exports.b;
+}
 
-console.log('finished building root', exports)
+console.log('finished building root', module.exports)
